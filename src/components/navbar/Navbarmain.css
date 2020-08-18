@@ -1,0 +1,118 @@
+.nav-main{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.4rem;
+    background: #6a6b6d;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    position: absolute;
+    cursor: pointer;
+    height: 60px;
+    transform: translate(0%,-23%);
+}
+
+b {
+    color: bisque;
+}
+
+.toggle{
+    position: relative;
+    padding : 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+input[type ="checkbox"].checkbox {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+}
+
+input[type ="checkbox"].checkbox:checked+label{
+    left: 30px;
+}
+
+input[type ="checkbox"].checkbox:focus-visible{
+    outline: solid 2px white;
+}
+
+input[type ="checkbox"].checkbox + label{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    opacity: 0.9;
+    background-color: cyan;
+}
+
+.toggle-container{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-container > span{
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+@media only screen and (max-width: 650px){
+    .heading{
+        left: 0;
+        margin:15px 0px 0px 10px;
+    }
+
+    .nav-main{
+        font-size: 1.2em;
+    }
+
+    .toggle-container{
+        margin-right: 10px;
+    }
+     input[type ="checkbox"].checkbox:checked+label{
+        left: 20px;
+    }
+
+    input[type ="checkbox"].checkbox {
+        width: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+    .nav-main{
+        font-size: 1em;
+    }
+
+    .heading{
+        left: 0;
+        margin:30px 0px 0px 10px;
+    }
+
+   
+}
