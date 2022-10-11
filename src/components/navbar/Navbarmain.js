@@ -6,7 +6,7 @@ class Navbarmain extends Component {
         return (
             // Main navbar and light-dark modes
             <nav className="nav-main">
-                    <h1 className="heading"><b>Block</b>onomist</h1>
+                    <h1 className="heading"><b>Block</b>Art</h1>
 
                     <div className="toggle-container">
                         <span style={{color: this.props.darkmode? "grey" :"yellow"}}>☀</span>
